@@ -28,10 +28,12 @@
     --radius: 0rem;
   }
 
+  * {
+    @apply border-border;
+  }
 
   body {
-    background-color: hsl(var(--background));
-    color: hsl(var(--foreground));
+    @apply bg-background text-foreground;
     font-family: 'JetBrains Mono', monospace;
     margin: 0;
     padding: 0;
@@ -40,7 +42,6 @@
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
   }
-
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Press Start 2P', monospace;

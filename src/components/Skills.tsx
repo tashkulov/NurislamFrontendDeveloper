@@ -166,7 +166,7 @@ const Skills = () => {
         <div className="mt-8">
           <Card className="pixel-border bg-card/50 p-6 text-center">
             <p className="text-mono text-sm text-foreground/80">
-              <span className="text-primary font-bold">const</span> yearsOfExperience = <span className="text-accent">3</span>;
+              <span className="text-primary font-bold">const</span> yearsOfExperience = <span className="text-accent">4</span>;
               {' '}<span className="text-primary font-bold">const</span> projectsCompleted = <span className="text-accent">15</span>+;
               {' '}<span className="text-primary font-bold">const</span> passionLevel = <span className="text-destructive">'∞'</span>;
             </p>

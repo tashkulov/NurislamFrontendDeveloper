@@ -31,19 +31,19 @@ const Contact = () => {
     {
       icon: <Github className="w-6 h-6" />,
       label: 'GitHub',
-      href: 'https://github.com/yourusername',
+      href: 'https://github.com/tashkulov',
       color: 'bg-card hover:bg-primary/20 border-primary'
     },
     {
       icon: <Linkedin className="w-6 h-6" />,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/yourprofile',
+      href: 'https://linkedin.com/in/nurislam-frontend-developer',
       color: 'bg-card hover:bg-accent/20 border-accent'
     },
     {
       icon: <Send className="w-6 h-6" />,
       label: 'Telegram',
-      href: 'https://t.me/yourusername',
+      href: 'https://t.me/Jutsuo',
       color: 'bg-card hover:bg-destructive/20 border-destructive'
     }
   ];
@@ -165,7 +165,7 @@ const Contact = () => {
         <div className="text-center mt-12">
           <div className="inline-block pixel-border bg-card px-6 py-3">
             <p className="text-mono text-xs text-foreground/60">
-              Made with <span className="text-destructive">❤</span> by Nurislam Tashkulov © 2024
+              Made with <span className="text-destructive">❤</span> by Nurislam Tashkulov © 2025
             </p>
           </div>
         </div>

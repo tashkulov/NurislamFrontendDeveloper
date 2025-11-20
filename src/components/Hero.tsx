@@ -70,7 +70,7 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4 justify-center items-center">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/tashkulov" target="_blank" rel="noopener noreferrer">
               <Button
                 className="pixel-border pixel-border-hover bg-card hover:bg-card/80 text-foreground gap-2 text-pixel text-xs"
               >
@@ -79,7 +79,7 @@ const Hero = () => {
               </Button>
             </a>
 
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+            <a href="https://linkedin.com/in/nurislam-frontend-developer" target="_blank" rel="noopener noreferrer">
               <Button
                 className="pixel-border pixel-border-hover bg-primary hover:bg-primary/90 text-primary-foreground gap-2 text-pixel text-xs"
               >
@@ -88,7 +88,7 @@ const Hero = () => {
               </Button>
             </a>
 
-            <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer">
+            <a href="https://t.me/Jutsuo" target="_blank" rel="noopener noreferrer">
               <Button
                 className="pixel-border pixel-border-hover bg-accent hover:bg-accent/90 text-accent-foreground gap-2 text-pixel text-xs"
               >

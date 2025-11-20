@@ -58,7 +58,7 @@ const Hero = () => {
           {/* Description */}
           <div className="pixel-border bg-card p-6 md:p-8 mb-8 text-left max-w-2xl mx-auto">
             <p className="text-mono text-sm md:text-base leading-relaxed text-foreground/90">
-              <span className="text-primary">&gt;</span> Frontend Developer with <span className="text-accent font-bold">3+ years</span> of experience
+              <span className="text-primary">&gt;</span> Frontend Developer with <span className="text-accent font-bold">4+ years</span> of experience
               <br />
               <span className="text-primary">&gt;</span> Delivering scalable web applications using <span className="text-accent font-bold">React</span>, <span className="text-accent font-bold">Vue</span>, <span className="text-accent font-bold">Next.js</span>
               <br />

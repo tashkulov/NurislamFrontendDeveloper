@@ -59,7 +59,7 @@ const About = () => {
                 <span className="text-accent">role:</span> <span className="text-destructive">"Middle Frontend Developer"</span>,
               </p>
               <p className="pl-4">
-                <span className="text-accent">experience:</span> <span className="text-destructive">"3+ years"</span>,
+                <span className="text-accent">experience:</span> <span className="text-destructive">"4+ years"</span>,
               </p>
               <p className="pl-4">
                 <span className="text-accent">location:</span> <span className="text-destructive">"Bishkek, Kyrgyzstan"</span>,

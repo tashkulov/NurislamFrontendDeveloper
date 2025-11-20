@@ -1,0 +1,41 @@
+// Pixel-art color palette
+$pixel-dark: #0d1117;
+$pixel-darker: #010409;
+$pixel-bg: #161b22;
+$pixel-card: #21262d;
+$pixel-border: #30363d;
+$pixel-border-bright: #484f58;
+
+$pixel-primary: #58a6ff;
+$pixel-primary-hover: #79c0ff;
+$pixel-secondary: #8b949e;
+$pixel-success: #56d364;
+$pixel-warning: #e3b341;
+$pixel-error: #f85149;
+
+$pixel-text-primary: #c9d1d9;
+$pixel-text-secondary: #8b949e;
+$pixel-text-muted: #6e7681;
+
+// Pixel sizes
+$pixel-unit: 4px;
+$pixel-border-width: 2px;
+$pixel-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
+$pixel-shadow-hover: 6px 6px 0px rgba(0, 0, 0, 0.3);
+
+// Typography - Pixel font settings
+$font-pixel: 'Press Start 2P', 'Courier New', monospace;
+$font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+// Spacing
+$spacing-xs: calc($pixel-unit * 2);
+$spacing-sm: calc($pixel-unit * 4);
+$spacing-md: calc($pixel-unit * 6);
+$spacing-lg: calc($pixel-unit * 8);
+$spacing-xl: calc($pixel-unit * 12);
+$spacing-xxl: calc($pixel-unit * 16);
+
+// Transitions
+$transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+$transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+$transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);

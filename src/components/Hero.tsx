@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Github, Linkedin, Send, Mail } from 'lucide-react';
+import { Github, Linkedin, Send, Mail, Download } from 'lucide-react';
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
@@ -51,25 +51,38 @@ const Hero = () => {
           {/* Pixel art title badge */}
           <div className="pixel-border bg-card inline-block px-6 py-3 mb-8">
             <p className="text-pixel text-xs md:text-sm text-accent">
-              MIDDLE FRONTEND DEVELOPER
+              SOFTWARE ENGINEER
             </p>
           </div>
 
           {/* Description */}
           <div className="pixel-border bg-card p-6 md:p-8 mb-8 text-left max-w-2xl mx-auto">
             <p className="text-mono text-sm md:text-base leading-relaxed text-foreground/90">
-              <span className="text-primary">&gt;</span> Frontend Developer with <span className="text-accent font-bold">4+ years</span> of experience
+              <span className="text-primary">&gt;</span> Software Engineer with <span className="text-accent font-bold">5+ years</span> of commercial experience
               <br />
-              <span className="text-primary">&gt;</span> Delivering scalable web applications using <span className="text-accent font-bold">React</span>, <span className="text-accent font-bold">Vue</span>, <span className="text-accent font-bold">Next.js</span>
+              <span className="text-primary">&gt;</span> Specializing in <span className="text-accent font-bold">TypeScript</span>, <span className="text-accent font-bold">Node.js</span>, <span className="text-accent font-bold">NestJS</span>, <span className="text-accent font-bold">React</span> + <span className="text-accent font-bold">Next.js</span>
               <br />
-              <span className="text-primary">&gt;</span> Specialized in performance optimization & Web3 integration
+              <span className="text-primary">&gt;</span> AI platform (6M+ monthly users), FinTech, SaaS
               <br />
-              <span className="text-primary">&gt;</span> Passionate about creating seamless user experiences
+              <span className="text-primary">&gt;</span> Backend services, API design, complex business logic & architecture
             </p>
           </div>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-wrap gap-4 justify-center items-center">
+          {/* Primary CTA */}
+          <div className="mb-6">
+            <a href="/Nurislam_Tashkulov_Resume.pdf" download>
+              <Button
+                size="lg"
+                className="pixel-border pixel-border-hover bg-accent hover:bg-accent/90 text-accent-foreground gap-3 text-pixel text-xs md:text-sm px-8 py-6 h-auto"
+              >
+                <Download className="w-5 h-5" />
+                DOWNLOAD RESUME (PDF)
+              </Button>
+            </a>
+          </div>
+
+          {/* Secondary links */}
+          <div className="flex flex-wrap gap-3 justify-center items-center">
             <a href="https://github.com/tashkulov" target="_blank" rel="noopener noreferrer">
               <Button
                 className="pixel-border pixel-border-hover bg-card hover:bg-card/80 text-foreground gap-2 text-pixel text-xs"
@@ -79,18 +92,18 @@ const Hero = () => {
               </Button>
             </a>
 
-            <a href="https://linkedin.com/in/nurislam-frontend-developer" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/tashkulov/" target="_blank" rel="noopener noreferrer">
               <Button
-                className="pixel-border pixel-border-hover bg-primary hover:bg-primary/90 text-primary-foreground gap-2 text-pixel text-xs"
+                className="pixel-border pixel-border-hover bg-card hover:bg-card/80 text-foreground gap-2 text-pixel text-xs"
               >
                 <Linkedin className="w-4 h-4" />
                 LINKEDIN
               </Button>
             </a>
 
-            <a href="https://t.me/Jutsuo" target="_blank" rel="noopener noreferrer">
+            <a href="https://t.me/sambiokeyko" target="_blank" rel="noopener noreferrer">
               <Button
-                className="pixel-border pixel-border-hover bg-accent hover:bg-accent/90 text-accent-foreground gap-2 text-pixel text-xs"
+                className="pixel-border pixel-border-hover bg-card hover:bg-card/80 text-foreground gap-2 text-pixel text-xs"
               >
                 <Send className="w-4 h-4" />
                 TELEGRAM
@@ -99,7 +112,7 @@ const Hero = () => {
 
             <a href="mailto:nurislamtashkulov168@gmail.com">
               <Button
-                className="pixel-border pixel-border-hover bg-destructive hover:bg-destructive/90 text-destructive-foreground gap-2 text-pixel text-xs"
+                className="pixel-border pixel-border-hover bg-card hover:bg-card/80 text-foreground gap-2 text-pixel text-xs"
               >
                 <Mail className="w-4 h-4" />
                 EMAIL
@@ -109,11 +122,11 @@ const Hero = () => {
 
           {/* Scroll indicator */}
           <div className="mt-16">
-            <div className="animate-bounce inline-block">
+            <a href="#about" aria-label="Scroll to About" className="animate-bounce inline-block">
               <div className="w-6 h-10 border-2 border-primary rounded-full relative">
                 <div className="w-1 h-2 bg-primary rounded-full absolute top-2 left-1/2 transform -translate-x-1/2 animate-pulse"></div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>

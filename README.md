@@ -1,6 +1,6 @@
 # Nurislam Tashkulov - Portfolio Website
 
-A pixel-art styled portfolio website showcasing my experience, skills, and projects as a Frontend Developer.
+A pixel-art styled portfolio website showcasing my experience, skills, and projects as a Software Engineer.
 
 ## Features
 
@@ -131,7 +131,7 @@ MIT License - feel free to use this template for your own portfolio!
 
 - Email: nurislamtashkulov168@gmail.com
 - Phone: +996 554 179 179
-- Location: Bishkek, Kyrgyzstan
+- Location: Warsaw, Poland
 
 ---
 

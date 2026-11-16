@@ -7,6 +7,7 @@ import CursorTrail from './components/CursorTrail';
 import ParticleBackground from './components/ParticleBackground';
 import ScanlineEffect from './components/ScanlineEffect';
 import ScrollProgress from './components/ScrollProgress';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       {/* Interactive Effects */}
       <CursorTrail />
       <ScrollProgress />
+      <Navbar />
     </div>
   );
 }

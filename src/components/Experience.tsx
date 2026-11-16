@@ -10,60 +10,76 @@ interface ExperienceItem {
   technologies: string[];
 }
 
+const metricPattern = /(15-step|~?\d+(?:[-–]\d+)?[M%]?\+?%?(?![A-Za-z\d]))/g;
+
+const highlight = (text: string) =>
+  text.split(metricPattern).map((part, i) =>
+    i % 2 === 1 ? (
+      <strong key={i} className="text-accent font-bold">{part}</strong>
+    ) : (
+      part
+    )
+  );
+
 const Experience = () => {
   const experiences: ExperienceItem[] = [
     {
-      company: 'Recardme',
-      role: 'Frontend Developer',
-      period: 'Sep 2024 - Present',
+      company: 'Ruby Labs',
+      role: 'Software Engineer',
+      period: 'Apr 2026 - Aug 2026',
       location: 'Remote',
       achievements: [
-        'Developed admin panel with Next.js & TypeScript, reducing load times by 15%',
-        'Designed referral program, increasing user acquisition by 20%',
-        'Revamped UI improving user satisfaction by 15%'
+        'Developed full-stack features for a flagship AI application serving 6M+ monthly users',
+        'Co-developed the product-wide design system: reusable UI patterns, typography, spacing, colors, layout',
+        'Eliminated race conditions in A/B experiment tracking across 10+ concurrent experiments',
+        'Implemented real-time features with WebSockets: live data streaming and event-driven UI updates'
       ],
-      technologies: ['Next.js', 'TypeScript', 'React', 'Tailwind CSS']
+      technologies: ['Node.js', 'Express', 'Next.js', 'TypeScript', 'WebSockets', 'GrowthBook', 'Mixpanel']
     },
     {
-      company: 'Impact Digital Lab',
-      role: 'Frontend Developer',
-      period: 'Nov 2023 - Aug 2024',
+      company: 'Rocket Tech',
+      role: 'Full-Stack Engineer',
+      period: 'Apr 2024 - Mar 2026',
       location: 'Remote',
       achievements: [
-        'Implemented WebSocket real-time updates, boosting responsiveness by 25%',
-        'Integrated multilingual support (RU, EN, CN) for global market',
-        'Optimized build pipeline with Vite, reducing bundle sizes by 30%'
+        'Contributed to architecture of a large-scale fintech platform with complex financial workflows',
+        'Engineered a 15-step credit application workflow with conditional logic, document processing and validation',
+        'Built credit application management, banking offers, RBAC and financial reporting',
+        'Standardized REST API integration patterns and reduced redundant requests across financial modules',
+        'Led refactoring: 30-35% of sprint capacity on tech debt, major improvements done in two sprints'
       ],
-      technologies: ['React', 'Vue 3', 'Vite', 'WebSocket', 'i18n']
+      technologies: ['React', 'TypeScript', 'Node.js', 'NestJS', 'PostgreSQL', 'MongoDB']
+    },
+    {
+      company: 'Recardme',
+      role: 'Software Engineer',
+      period: 'Aug 2022 - Apr 2024',
+      location: 'Remote',
+      achievements: [
+        'Developed a B2B2C SaaS loyalty platform: cashback programs, digital loyalty cards, customer management',
+        'Built loyalty workflows with referral systems and QR-based interactions',
+        'Integrated REST APIs across loyalty transactions, booking systems and business analytics',
+        'Optimized API consumption and caching, reducing redundant requests by ~35%',
+        'Built configurable catalogs for restaurants, retail, real estate and service providers'
+      ],
+      technologies: ['Next.js', 'TypeScript', 'React', 'REST API', 'Tailwind CSS']
     },
     {
       company: 'Snowflakes',
-      role: 'Full Stack Developer',
-      period: 'Aug 2022 - Oct 2023',
+      role: 'Frontend Engineer',
+      period: 'Feb 2022 - Aug 2022',
       location: 'Kyrgyzstan',
       achievements: [
-        'Applied Feature-Sliced Design architecture, reducing dependencies by 35%',
-        'Developed 15+ functional modules increasing user satisfaction by 30%',
-        'Engineered caching system improving page load speed by 40%'
+        'Delivered 15+ production features across multiple client applications',
+        'Built reusable modules, complex forms and API-driven workflows with validation and error handling',
+        'Reduced redundant API requests by up to 30% via caching, component reuse and rendering improvements'
       ],
-      technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'FSD']
-    },
-    {
-      company: 'Inclusive Technology',
-      role: 'Full Stack Developer',
-      period: 'Jan 2022 - Jul 2022',
-      location: 'Kyrgyzstan',
-      achievements: [
-        'Developed full-stack applications using Node.js and Vue 3',
-        'Migrated legacy system from React to Vue 3, improving usability by 30%',
-        'Optimized workflows with service-based architecture by 10%'
-      ],
-      technologies: ['Vue 3', 'Node.js', 'PostgreSQL', 'REST API']
+      technologies: ['React', 'TypeScript', 'REST API', 'FSD']
     }
   ];
 
   return (
-    <section className="min-h-screen py-20 px-4 pixel-grid relative">
+    <section id="experience" className="py-20 px-4 pixel-grid relative scroll-mt-16">
       <div className="container mx-auto max-w-6xl">
         {/* Section Title */}
         <div className="text-center mb-16">
@@ -103,6 +119,11 @@ const Experience = () => {
                         <h3 className="text-pixel text-sm md:text-base text-accent">
                           {exp.company}
                         </h3>
+                        {index === 0 && (
+                          <span className="ml-auto pixel-border bg-background px-2 py-1 text-pixel text-[10px] text-accent">
+                            LATEST
+                          </span>
+                        )}
                       </div>
                       <p className="text-mono text-sm text-primary font-bold mb-2">
                         {exp.role}
@@ -128,7 +149,7 @@ const Experience = () => {
                         {exp.achievements.map((achievement, i) => (
                           <li key={i} className="flex items-start gap-2">
                             <span className="text-primary mt-1">▸</span>
-                            <span>{achievement}</span>
+                            <span>{highlight(achievement)}</span>
                           </li>
                         ))}
                       </ul>

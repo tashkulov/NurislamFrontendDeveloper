@@ -18,7 +18,7 @@ const About = () => {
     {
       icon: <Rocket className="w-8 h-8" />,
       title: 'INNOVATION',
-      description: 'Implementing cutting-edge Web3 and real-time technologies',
+      description: 'Building AI-scale products and real-time features with WebSockets',
       color: 'text-destructive'
     },
     {
@@ -29,8 +29,15 @@ const About = () => {
     }
   ];
 
+  const stats = [
+    { value: '6M+', label: 'Monthly users on the AI platform', color: 'text-accent' },
+    { value: '~35%', label: 'Fewer redundant API requests', color: 'text-primary' },
+    { value: '15', label: 'Steps in the credit workflow built', color: 'text-destructive' },
+    { value: '10+', label: 'Concurrent A/B experiments stabilized', color: 'text-accent' }
+  ];
+
   return (
-    <section className="min-h-screen py-20 px-4 pixel-grid relative">
+    <section id="about" className="py-20 px-4 pixel-grid relative scroll-mt-16">
       <div className="container mx-auto max-w-6xl">
         {/* Section Title */}
         <div className="text-center mb-16">
@@ -56,16 +63,16 @@ const About = () => {
                 <span className="text-accent">name:</span> <span className="text-destructive">"Nurislam Tashkulov"</span>,
               </p>
               <p className="pl-4">
-                <span className="text-accent">role:</span> <span className="text-destructive">"Middle Frontend Developer"</span>,
+                <span className="text-accent">role:</span> <span className="text-destructive">"Software Engineer"</span>,
               </p>
               <p className="pl-4">
-                <span className="text-accent">experience:</span> <span className="text-destructive">"4+ years"</span>,
+                <span className="text-accent">experience:</span> <span className="text-destructive">"5+ years"</span>,
               </p>
               <p className="pl-4">
-                <span className="text-accent">location:</span> <span className="text-destructive">"Bishkek, Kyrgyzstan"</span>,
+                <span className="text-accent">location:</span> <span className="text-destructive">"Warsaw, Poland"</span>,
               </p>
               <p className="pl-4">
-                <span className="text-accent">passion:</span> <span className="text-destructive">"Building amazing UX"</span>
+                <span className="text-accent">passion:</span> <span className="text-destructive">"End-to-end solutions"</span>
               </p>
               <p>{'};'}</p>
             </div>
@@ -76,38 +83,13 @@ const About = () => {
             <h3 className="text-pixel text-sm md:text-base text-accent mb-6">
               // ACHIEVEMENTS
             </h3>
-            <div className="space-y-6">
-              <div className="flex items-center justify-between">
-                <span className="text-mono text-sm text-foreground/80">Load Time Reduction</span>
-                <span className="text-pixel text-xs text-accent">-40%</span>
-              </div>
-              <div className="h-2 bg-background pixel-border w-full">
-                <div className="h-full bg-accent" style={{ width: '40%' }}></div>
-              </div>
-
-              <div className="flex items-center justify-between">
-                <span className="text-mono text-sm text-foreground/80">User Satisfaction</span>
-                <span className="text-pixel text-xs text-primary">+30%</span>
-              </div>
-              <div className="h-2 bg-background pixel-border w-full">
-                <div className="h-full bg-primary" style={{ width: '30%' }}></div>
-              </div>
-
-              <div className="flex items-center justify-between">
-                <span className="text-mono text-sm text-foreground/80">Bundle Size Optimization</span>
-                <span className="text-pixel text-xs text-destructive">-30%</span>
-              </div>
-              <div className="h-2 bg-background pixel-border w-full">
-                <div className="h-full bg-destructive" style={{ width: '30%' }}></div>
-              </div>
-
-              <div className="flex items-center justify-between">
-                <span className="text-mono text-sm text-foreground/80">Projects Completed</span>
-                <span className="text-pixel text-xs text-accent">15+</span>
-              </div>
-              <div className="h-2 bg-background pixel-border w-full">
-                <div className="h-full bg-secondary" style={{ width: '85%' }}></div>
-              </div>
+            <div className="grid grid-cols-2 gap-4">
+              {stats.map((stat, i) => (
+                <div key={i} className="pixel-border bg-background p-4 text-center">
+                  <p className={`text-pixel text-xl md:text-2xl mb-3 ${stat.color}`}>{stat.value}</p>
+                  <p className="text-mono text-xs text-foreground/70 leading-snug">{stat.label}</p>
+                </div>
+              ))}
             </div>
           </Card>
         </div>

@@ -11,41 +11,40 @@ interface SkillCategory {
 const Skills = () => {
   const skillCategories: SkillCategory[] = [
     {
-      icon: <Code className="w-6 h-6" />,
-      title: 'LANGUAGES',
-      skills: ['JavaScript', 'TypeScript', 'Python', 'Java'],
-      color: 'text-primary'
-    },
-    {
       icon: <Layers className="w-6 h-6" />,
-      title: 'FRONTEND',
-      skills: ['React', 'Vue 3', 'Next.js', 'Tailwind CSS', 'Redux', 'Pinia', 'Zustand'],
+      title: 'BACKEND',
+      skills: ['Node.js', 'NestJS', 'Express', 'REST APIs', 'WebSockets', 'API Design', 'Authentication', 'Authorization', 'PostgreSQL', 'MongoDB'],
       color: 'text-accent'
     },
     {
+      icon: <Code className="w-6 h-6" />,
+      title: 'FRONTEND',
+      skills: ['TypeScript', 'JavaScript', 'React', 'Next.js', 'Vue 3', 'Nuxt 3', 'Redux Toolkit', 'TanStack Query', 'Zustand', 'Pinia'],
+      color: 'text-primary'
+    },
+    {
       icon: <Database className="w-6 h-6" />,
-      title: 'BACKEND',
-      skills: ['Node.js', 'Express', 'MongoDB', 'PostgreSQL', 'REST API', 'WebSocket'],
+      title: 'ARCHITECTURE & PRODUCT',
+      skills: ['Full-Stack Development', 'Async Programming', 'Error Handling', 'Performance Optimization', 'Feature-Sliced Design', 'A/B Testing', 'GrowthBook', 'Mixpanel'],
       color: 'text-destructive'
     },
     {
       icon: <Globe className="w-6 h-6" />,
-      title: 'WEB3 & TOOLS',
-      skills: ['TON', 'Solana', 'Vite', 'Webpack', 'Git', 'Docker'],
+      title: 'DEVOPS & AI TOOLS',
+      skills: ['Docker', 'CI/CD', 'Git', 'Vite', 'Webpack', 'Claude Code', 'OpenAI Codex', 'Cursor'],
       color: 'text-secondary'
     }
   ];
 
   const languages = [
-    { name: 'English', level: 'B2', width: '65%' },
+    { name: 'English', level: 'C1', width: '65%' },
     { name: 'German', level: 'B1', width: '50%' },
-    { name: 'Japanese', level: 'N2', width: '70%' },
-    { name: 'Russian', level: 'Native', width: '100%' },
-    { name: 'Kyrgyz', level: 'Native', width: '100%' }
+    { name: 'Kyrgyz', level: 'Native', width: '100%' },
+    { name: 'Russian', level: 'Native', width: '100%' }
   ];
 
   return (
-    <section className="min-h-screen py-20 px-4 pixel-grid relative">
+    <section id="skills" className="py-20 px-4 pixel-grid relative scroll-mt-16">
       <div className="container mx-auto max-w-6xl">
         {/* Section Title */}
         <div className="text-center mb-16">
@@ -128,10 +127,10 @@ const Skills = () => {
             <div className="space-y-4">
               <div>
                 <h4 className="text-mono text-sm font-bold text-primary mb-2">
-                  Kyrgyz-German Institute
+                  Kyrgyz-German Institute for Applied Informatics
                 </h4>
                 <p className="text-mono text-xs text-foreground/80 mb-2">
-                  Web Development
+                  B.Sc. in Computer Science
                 </p>
                 <p className="text-mono text-xs text-secondary mb-3">
                   Sep 2021 - May 2025
@@ -148,7 +147,7 @@ const Skills = () => {
                   // KEY COURSES:
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {['Data Structures', 'Machine Learning', 'Web Dev', 'Algorithms'].map((course, i) => (
+                  {['Algorithms & Data Structures', 'Databases', 'Machine Learning', 'Web Development'].map((course, i) => (
                     <span
                       key={i}
                       className="pixel-border bg-background px-2 py-1 text-xs text-mono text-foreground/80"
@@ -166,8 +165,8 @@ const Skills = () => {
         <div className="mt-8">
           <Card className="pixel-border bg-card/50 p-6 text-center">
             <p className="text-mono text-sm text-foreground/80">
-              <span className="text-primary font-bold">const</span> yearsOfExperience = <span className="text-accent">4</span>;
-              {' '}<span className="text-primary font-bold">const</span> projectsCompleted = <span className="text-accent">15</span>+;
+              <span className="text-primary font-bold">const</span> yearsOfExperience = <span className="text-accent">5</span>+;
+              {' '}<span className="text-primary font-bold">const</span> modulesBuilt = <span className="text-accent">15</span>+;
               {' '}<span className="text-primary font-bold">const</span> passionLevel = <span className="text-destructive">'∞'</span>;
             </p>
           </Card>

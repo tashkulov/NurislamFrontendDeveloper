@@ -99,3 +99,42 @@
   0% { transform: translateY(-100%); }
   100% { transform: translateY(100%); }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid hsl(var(--primary));
+  outline-offset: 2px;
+}
+
+/* Keep heavy decorative effects off small screens and for reduced-motion users */
+@media (max-width: 768px) {
+  .scanlines,
+  .crt-flicker,
+  .vignette,
+  canvas {
+    display: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .scanlines,
+  .crt-flicker,
+  .vignette,
+  canvas {
+    display: none !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

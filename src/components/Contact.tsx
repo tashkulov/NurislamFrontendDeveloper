@@ -21,7 +21,7 @@ const Contact = () => {
     {
       icon: <MapPin className="w-5 h-5" />,
       label: 'LOCATION',
-      value: 'Bishkek, Kyrgyzstan',
+      value: 'Warsaw, Poland',
       href: '#',
       color: 'text-destructive'
     }
@@ -37,19 +37,19 @@ const Contact = () => {
     {
       icon: <Linkedin className="w-6 h-6" />,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/nurislam-frontend-developer',
+      href: 'https://www.linkedin.com/in/tashkulov/',
       color: 'bg-card hover:bg-accent/20 border-accent'
     },
     {
       icon: <Send className="w-6 h-6" />,
       label: 'Telegram',
-      href: 'https://t.me/Jutsuo',
+      href: 'https://t.me/sambiokeyko',
       color: 'bg-card hover:bg-destructive/20 border-destructive'
     }
   ];
 
   return (
-    <section className="min-h-screen py-20 px-4 pixel-grid relative">
+    <section id="contact" className="py-20 px-4 pixel-grid relative scroll-mt-16">
       <div className="container mx-auto max-w-6xl">
         {/* Section Title */}
         <div className="text-center mb-16">
@@ -150,7 +150,7 @@ const Contact = () => {
               Thanks for visiting my portfolio! <span className="animate-blink">_</span>
             </p>
             <p className="text-foreground/80 pl-4">
-              If you're looking for a dedicated frontend developer who loves clean code,
+              If you're looking for a dedicated software engineer who loves clean code,
             </p>
             <p className="text-foreground/80 pl-4">
               pixel-perfect designs, and innovative solutions - let's talk!
@@ -165,7 +165,7 @@ const Contact = () => {
         <div className="text-center mt-12">
           <div className="inline-block pixel-border bg-card px-6 py-3">
             <p className="text-mono text-xs text-foreground/60">
-              Made with <span className="text-destructive">❤</span> by Nurislam Tashkulov © 2025
+              Made with <span className="text-destructive">❤</span> by Nurislam Tashkulov © 2026
             </p>
           </div>
         </div>
